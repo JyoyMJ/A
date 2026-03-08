@@ -3,449 +3,236 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
+
+*{
+box-sizing:border-box;
+}
+
 body{
-	margin:0;
+margin:0;
+font-family:Arial, sans-serif;
+padding-top:140px;
 }
 
-.head0,h2,h3,h4,h5{
-	background-color:black;
-	color:white;position:
-	fixed;top:0;
-	width:100%;
-	z-index:1000;
+/* HEADER */
+
+.head0{
+background-color:black;
+color:white;
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+text-align:center;
+padding:10px;
 }
 
-	h2,h3,h4,h5{width:auto;}
+/* MAIN BOX */
+
 .div01{
-	background-color:lightblue;
-	text-align:left;
-	padding:20px 20px;
-	margin:10px;
-	overflow:auto;
-	border-radius:10px;
+background-color:lightblue;
+text-align:left;
+padding:20px;
+margin:10px;
+overflow:auto;
+border-radius:10px;
+}
+
+/* INNER BOX */
+
+.div02{
+background-color:skyblue;
+text-align:left;
+padding:20px;
+margin:10px 0;
+border-radius:10px;
+}
+
+/* HEADINGS DEMO BOX */
+
+.h0div02{
+background-color:lightgrey;
+height:30px;
+width:170px;
+border-radius:3px;
+padding-left:5px;
+}
+
+/* SIDE BOXES */
+
+.div03,.div04,.div05,.div06{
+background-color:white;
+border-radius:20px;
+padding:10px;
+margin-top:10px;
+}
+
+/* MEDIA RESPONSIVE */
+
+img,video,iframe{
+max-width:100%;
+height:auto;
+}
+
+/* FORM INPUT */
+
+input,button{
+max-width:400px;
+width:100%;
+margin:5px 0;
+padding:5px;
+}
+
+/* MOBILE FIX */
+
+@media (max-width:768px){
+
+.head0 h1{
+font-size:18px;
+}
+
+.div01{
+margin:5px;
+padding:15px;
 }
 
 .div02{
-	background-color:skyblue;
-	text-align:left;
-	padding:20px 20px;
-	margin:5px;
+padding:15px;
 }
 
-.h0div02{
-	background-color:lightgrey;
-	height:auto;
-	width:170px;
-	border-radius:1px;
-}
-
-.div03{
-	background-color:white;
-	display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-	width:100%;
-    max-width:600px;
-	border-radius:20px;
-	overflow:auto;
-	z-index:1;
-}
-
-.div04{
-	background-color:white;
-	position:absolute;
-	right:55px;
-	height:70px;
-	width:auto;
-	border-radius:20px;
-	overflow:auto;
-	z-index:1;
-}
-
-.div05{
-	background-color:white;
-	position:absolute;
-	right:55px;
-	height:40px;
-	width:auto;
-	border-radius:20px;
-	overflow:auto;
-	z-index:1;
-}
-
-.div06{
-	background-color:white;
-	position:absolute;
-	right:55px;
-	height:140px;
-	width:auto;
-	border-radius:20px;
-	overflow:auto;
-	z-index:1;
 }
 
 </style>
+
 <title>HTML</title>
 </head>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <body>
 
 <header class="head0">
-<h1 align="center">WELCOME TO MY WEBSITE<br>My self Jignesh More<br>DARK-WEB-OPREATOR</h1>
+<h1>WELCOME TO MY WEBSITE<br>My self Jignesh More<br>DARK-WEB-OPERATOR</h1>
 </header>
 
-<div class="div01" style="margin-top:160px;">
-<div class="div02" style="position:static;">
+<div class="div01">
+
+<div class="div02">
+
 <div class="div03"></div>
+
 <h1 class="h0div02">h1 headline</h1>
 <h2 class="h0div02">h2 headline</h2>
 <h3 class="h0div02">h3 headline</h3>
 <h4 class="h0div02">h4 headline</h4>
 <h5 class="h0div02">h5 headline</h5>
 <h6 class="h0div02">h6 headline</h6>
+
 </div>
 
-
-
-
 <div class="div02">
+
 <div class="div04"></div>
-<p>This is a paragraph<br>ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+
+<p>This is a paragraph<br>
+ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+
 </div>
 
-
-
 <div class="div02">
+
 <div class="div05"></div>
-<hr style="width:45%;float:left;"><br>line
+
+<hr style="width:45%">
+line
+
 </div>
 
 <div class="div02">
+
 <div class="div06"></div>
-<h2>Now we will see attribute(bold,underline,strong,italic,emphasis)</h2>
-<p>I am using a <b>bold tag</b>,<u>underline tag</u>,<strong>strong tag</strong>,<i>italic tag</i>,<em>emphasis tag</em>.<br>
-I also used br tag,strong tag is like bold tag but strong tag represent aleart or says its strong its bold,<br>Italic(i) and empasis(em) tag is same but em represent word by streaching often helpfull for screen reader </p>
-</div>
+
+<h2>Now we will see attribute</h2>
+
+<p>
+I am using a <b>bold tag</b>,
+<u>underline tag</u>,
+<strong>strong tag</strong>,
+<i>italic tag</i>,
+<em>emphasis tag</em>.
+</p>
+
 </div>
 
+</div>
 
 <div class="div01">
-<h2>NOW WE WILL SEE HOW TO ADD MEDIA LINKS AND ETC</h2>
+
+<h2>MEDIA LINKS</h2>
+
 <div class="div02">
-<a href="C:\Users\User\Desktop\cover of march\all practice of html for IT\O1.html">Anchor tag and i have added a link in it </a><br>
-<a href="C:\Users\User\Desktop\cover of march\all practice of html for IT\O1.html" target="_blank">Its still a anchor tag but i added a target attribute so the link open in the next tab or new tag  </a>
+
+<a href="#" target="_blank">Example link open in new tab</a>
+
 <hr>
-<a href="mailto:jigneshmore4580@gmail.com">email i used 'mailto:xyz@xyx.com' so if anyone click on link email opens and email will be already fill in to place <a><br>
-<a href="tell:+918850275890">similarly for phone number by 'tell:+1 234567890'</a><br>
-<a href="https:wa.me/+918850275890">similarly for whatsapp message by 'https:wa.me/+1234567890'</a><br>
-<hr>
-</div>
-<div class="div02">
-<p> Image </p>
-<img src="C:\Users\User\Pictures\Pictures\New folder (2)\ChatGPT Image Feb 22, 2026, 03_24_25 PM.png" id="mybaby" alt="me my baby" width="200" heigth="300" title="me and my baby">
-</div>
-<div class="div02">
-<p>Now we will see<br>ul-Unordered list (points are in bullets )<br>ol-Ordered list(points are in number )<br>dl-Discription list(terms + discription) </p>
-<p>ul</p><ul>
-<li>list</li>
-<li>list</li>
-<li>list</li>
-</ul>
-<p>ol</p>
-<ol>
-<li>list</li>
-<li>list</li>
-<li>list</li>
-</ol>
-<p>ol starts with 1 as default but i have started it by 10</p>
-<ol start="10">
-<li>list</li>
-<li>list</li>
-<li>list</li>
-</ol>
-<p>dl</p><ul>
-<dt>Term or iteam</dt>
-<dd>Discription Detail</dd>
-<dt>Term iteam</dt>
-<dd>Discription Detail</dd>
-<dt>Term iteam</dt>
-<dd>Discription Detail</dd>
-</dl>
-<hr>
-</div>
-</div>
-<div class="div01">
-<h4>we will see 'div' and 'span'</h4>
-<div class="div02">
-<div><h4>This heading is in the div,a contener,a box </h4>
-<p>This paragraph is also in div, a contener,a box basically the heading and the paragraph is grouped they are in a group it structures large section <span style="color:red">i am using span in this line (span basically focus or work on inline element and style text portion)</span>
-</div><hr>
-</div>
+
+<a href="mailto:jigneshmore4580@gmail.com">Send Email</a><br>
+
+<a href="tel:+918850275890">Call Phone</a><br>
+
+<a href="https://wa.me/918850275890">WhatsApp Message</a>
+
 </div>
 
+<div class="div02">
+
+<p>Image</p>
+
+<img src="image.png" alt="me and my baby" title="me and my baby">
+
+</div>
+
+</div>
 
 <div class="div01">
-<p><b>Header,main,section,footer,section,artical,aside</b></p>
 
 <div class="div02">
-<header>
-<h3>This is in header</h3><p>paragraph in header</p>
-</header>
-</div>
 
-<div class="div02">
-<nav>
-<h3>This is in nav</h3><p>paragraph in nav,links are on hold by #  </p>
-<a href="#">page xyz<a>
-<a href="#">page xyz<a>
-<a href="#">page xyz<a>
-<a href="#">page xyz<a>
-</nav>
-
-<hr>
-</div>
-<div class="div02">
-
-<main>
-<h3>This is in main and everything following would be in main<h3>
-<p>we will see attributes,(id,class,title,style,tool tip)<br></p>
-<h4>id</h4>
-<a href="#mybaby">i have put id on image and used here so when it will refer id it will nav me to img<a>
-<h4>class</h4>
-<p class="para">class is given to a group of element </p>
-<p class="para">i have used class and named it para </p>
-<p class="para">so when ever i want i can used class name and work on all paragraph</p>
-<p class="para">bassically i jsut grouped paragraphs by class,class attribute can be used on various tags i used it on paragraph tag  </p>
-<h4>title</h4>
-<p title="you are seeing text i put in title">It is used to display a text when ever we hower over element </p>
-<h4>Form,attributes are (for,id,name)</h4>
-<p>I am using a <u>placeholder</u> attribute in <u>url</u> input<br>I am using a <u>required</u> attribute in <u>search</u> input<br>I am using a <u>min</u>,<u>max</u>,<u>value</u> attribute in <u>Range</u> input</p><form>
-<label for="url">URL:</label>
-<input type="url" name="url" placeholder="Put your email "><br>
-
-<label for="color">COLOUR:</label>
-<input type="color" name="color"><br>
-
-<label for="month">MONTH:</label>
-<input type="month" name="month"><br>
-
-<label for="range">RANGE:</label>
-<input type="range" name="range" min="0" max="100" value="50"><br>
-
-<label for="radio">RADIO:</label>
-<input type="radio" name="radio" value="1">1
-<input type="radio" name="radio" value="2">2
-<input type="radio" name="radio" value="3">3<br>
-
-<label for="checkbox">CHECKBOX:</label>
-<input type="checkbox" name="checkbox"><br>
-
-<label for="datetime-local">DATETIME-LOCAL:</label>
-<input type="datetime-local" name="datetime-local"><br>
-
-<label for="week">WEEK:</label>
-<input type="week" name="week"><br>
-
-<label for="file">FILE:</label>
-<input type="file" name="file"><br>
-
-<label for="search">SEARCH:</label>
-<input type="search" name="search" required><br>
-
-<label for="tel">TEL:</label>
-<input type="tel" name="tel"><br>
-
-<label for="text">NAME:</label>
-<input type="text" name="text" id="name"><br>
-
-<label for="email">EMAIL:</label>
-<input type="email" name="email"><br>
-
-<label for="number">NUMBER:</label>
-<input type="number" name="number"><br>
-
-<label for="date">DATE:</label>
-<input type="date" name="date"><br>
-<input type="image" src="C:\Users\User\Pictures\Pictures\New folder (2)\ChatGPT Image Feb 22, 2026, 03_24_20 PM.png" width="56 "name="image"><label for="image" >CLICK ON THE IMAGE TO SUBMIT</label><br>
-
-<input type="submit" style="align:center;wigth:10pt;height:20pt">
-
-</form>
-<h4>we will see (form fieldset and legend)</h4>
+<h3>Form Example</h3>
 
 <form>
-<fieldset>
-<legend>part in a form</legend>
-<label for="xyz">xyz:</label>
-<input type="text" name="xyz"><br>
 
-<label for="xyz">xyz:</label>
-<input type="text" name="xyz"><br>
+<label for="name">Name:</label>
+<input type="text" id="name">
 
-<label for="xyz">xyz:</label>
-<input type="text" name="xyz"><br>
-<button type="submit">submit</button>
-<button type="reset">reset</button>
+<label for="email">Email:</label>
+<input type="email" id="email">
 
-</fieldset>
+<label for="search">Search:</label>
+<input type="search" id="search" required>
+
+<input type="submit">
+
 </form>
 
-<h3>Now we will see Tables</h3>
-<p>caption tag,it is use to tell about the table<br>Use thead,tbody,tfoot to group elements in table</p>
-<table border="1">
-<caption>Age of person</caption>
-<thead>
-<tr>
-<th>name</th><th>number</th><th>age</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>jyoy</td><td>123456789</td><td>17</td>
-</tr>
-
-<tr>
-<td>jyoy2</td><td>1234567890</td><td>17</td>
-</tr>
-</tbody>
-
-<tfoot>
-<tr>
-<td>total=2</td>
-</tr>
-</tfoot>
-</table>
-
-<h3>Table merging(colspan)</h3>
-<table border="1">
-<caption>Age of person</caption>
-<thead>
-<tr>
-<th>name</th><th>number</th><th>age</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>jyoy</td><td>123456789</td><td>17</td>
-</tr>
-
-<tr>
-<td>jyoy2</td><td>1234567890</td><td>17</td>
-</tr>
-</tbody>
-
-<tfoot>
-<tr>
-<td colspan="3">total=2</td>
-</tr>
-</tfoot>
-</table>
-
-<h3>Table merging(rowspan)</h3>
-<table border="1">
-<caption>Age of person</caption>
-<thead>
-<tr>
-<th rowspan="2">name</th><td>number</td><td rowspan="2">age</td>
-</tr>
-<tr>
-<td>bamboo</td>
-</tr>
-</thead>
-
-<tbody>
-
-</tbody>
-
-<tfoot>
-<tr>
-
-</tr>
-</tfoot>
-</table>
-
-<h3>Now we will see Media(audio,iframe,video)</h3>
-
-<p>AUDIO</p>
-<audio controls autoplay loop>
-<source src="C:\Users\User\Downloads\dragon-studio-dramatic-thud-reverb-478375.mp3" type="audio/mp3">
-your browser does not support the audio tag
-</audio>
-
-
-<p>VIDEO</p>
-<video controls width="310">
-<source src="C:\Users\User\Pictures\Pictures\vid\Video Project 2.mp4" type="video/mp4">
-your browser does not support the video tag
-</video>
-
-<P>IFRAME</P>
-<iframe  
-src="https://www.youtube.com/embed/6Q8C5tTZA0s?si=F8XwPsS_eh0KrQxZ" frameboder="0" 
-allow="autoplay"
-allowfullscreen
-loading="lazy">
-</iframe>
-
-<p>DOWNLOAD</p>
-<a href="C:\Users\User\Desktop\cover of march\box testing.docx" download="1">download<a>
-</main>
-<hr>
 </div>
+
 </div>
 
 <div class="div01">
-<div class="div02">
-<section>
-<h3>This is in section</h3><p>paragraph in section</p>
-</section>
-</div>
-</div>
 
-<div class="div01">
 <div class="div02">
-<aside>
-<h3>This is in aside</h3><p>paragraph in aside</p>
-<ul>
-<li>this in in aside </li>
-<li>this in in aside</li>
-<li>this in in aside</li>
-<ul>
-</aside>
-</div>
-</div>
 
-<div class="div01">
-<div class="div02">
-<artical>
-<h3>This is in artical</h3><p>paragraph in artical</p>
-</artical>
-</div>
-</div>
-
-<div class="div01">
-<div class="div02">
 <footer>
-<h3>This is in footer</h3><p>this paragraph is in footer</p></footer>
+
+<h3>This is in footer</h3>
+
+<p>This paragraph is in footer</p>
+
+</footer>
+
 </div>
+
 </div>
 
 </body>
