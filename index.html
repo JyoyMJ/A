@@ -37,14 +37,13 @@ body{
 .h0div02{
 	background-color:#F2F2F2;
 	height:30px;
-	width:200px; padding:5px;
+	width:170px; padding:5px;
 	border-radius:1px;
 }
-
+.div03,.div04,.div05,.div06,.div07{margin:5px;}
 .div03{
 	background-color:white;
-	
-	height:355px;
+	height:46	5px;
 	width:40%;
 	border-radius:20px;
 	overflow:auto;
@@ -57,7 +56,7 @@ body{
 .div04{
 	background-color:white;
 	
-	height:70px;
+	height:90px;
 	width:40%;
 	border-radius:20px;
 	overflow:auto;
@@ -65,7 +64,7 @@ body{
 
 .div05{
 	background-color:white;
-	height:40px;
+	height:75px;
 	width:40%;
 	border-radius:20px;
 	overflow:auto;
@@ -73,7 +72,7 @@ body{
 
 .div06{
 	background-color:white;
-	height:140px;
+	height:250px;
 	width:40%;
 	border-radius:20px;
 	overflow:auto;
@@ -81,7 +80,7 @@ body{
 
 .div07{
 	background-color:white;
-	height:180px;
+	height:	220px;
 	width:40%;
 	border-radius:20px;
 	overflow:auto;
@@ -96,6 +95,21 @@ body{
 	padding:10px;
 }
 
+.divoluldl02{
+	background-color:#1E3A5F;
+	width:30%;
+	padding:10px;
+}
+
+.divoluldl03{
+	background-color:#191970;padding:2px;border-radius:3px;color:#E5E7EB;text-align:center;
+}
+
+.oluldl{
+background-color:#F2F2F2;
+border-radius:1px;	
+	
+}
 </style>
 <title>HTML</title>
 </head>
@@ -125,7 +139,7 @@ body{
 
 <div class="div02">
 <div class="div031">
-<div style="background-color:#1E3A5F;padding:10px;width:210px;">
+<div style="background-color:#1E3A5F;padding:10px;width:180px;">
 <h3 align="center" style="background-color:#191970;padding:2px;border-radius:3px;color:#E5E7EB;">HEADING</h3>
 <h1 class="h0div02">h1 headline</h1>
 <h2 class="h0div02">h2 headline</h2>
@@ -243,24 +257,40 @@ I also used br tag,strong tag is like bold tag but strong tag represent aleart o
 <div class="div02">
 <div class="div031">
 <p>Now we will see<br>ul-Unordered list (points are in bullets )<br>ol-Ordered list(points are in number )<br>dl-Discription list(terms + discription) </p>
-<p>ul</p><ul>
+<div class="divoluldl02">
+
+
+
+
+<h3 class="divoluldl03">ul</h3>
+
+<ul class="oluldl">
 <li>list</li>
 <li>list</li>
 <li>list</li>
 </ul>
-<p>ol</p>
-<ol>
+
+<h3 class="divoluldl03">ol</h3>
+
+<ol class="oluldl">
 <li>list</li>
 <li>list</li>
 <li>list</li>
 </ol>
-<p>ol starts with 1 as default but i have started it by 10</p>
-<ol start="10">
+
+<h3 class="divoluldl03">ol starts with 1 as default but i have started it by 10</h3>
+
+<ol start="10" class="oluldl" >
 <li>list</li>
 <li>list</li>
 <li>list</li>
 </ol>
-<p>dl</p><ul>
+
+<h3 class="divoluldl03">dl</h3>
+
+<ul>
+
+<dl class="oluldl" style="padding:10px;">
 <dt>Term or iteam</dt>
 <dd>Discription Detail</dd>
 <dt>Term iteam</dt>
@@ -268,9 +298,10 @@ I also used br tag,strong tag is like bold tag but strong tag represent aleart o
 <dt>Term iteam</dt>
 <dd>Discription Detail</dd>
 </dl>
-</div>
+	</div>
+	</div>
 
-<div class="div07" style="height:610px;background-color:skyblue;display:flex;flex-direction:column;">
+	<div class="div0oluldl02" style="height:610px;background-color:skyblue;display:flex;flex-direction:column;width:40%;">
 <div class="div07" style="width:100%;height:95px;margin-bottom:10px;margin-top:95px;">
 </div>
 <div class="div07" style="width:100%;height:95px;margin-bottom:10px;">
@@ -279,14 +310,11 @@ I also used br tag,strong tag is like bold tag but strong tag represent aleart o
 </div>
 <div class="div07" style="width:100%;height:200px;margin-bottom:0px;">
 </div>
-</div>
+	</div>
 
-</div>
 
-</div>
-
-</div>
-</div>
+		</div>
+	</div>
 
 
 
@@ -314,12 +342,15 @@ I also used br tag,strong tag is like bold tag but strong tag represent aleart o
 <p><b>Header,main,section,footer,section,artical,aside</b></p>
 
 <div class="div02">
+	<div class="div031">
 <header>
 <h3>This is in header</h3><p>paragraph in header</p>
 </header>
 </div>
+</div>
 
 <div class="div02">
+	<div class="div031">
 <nav>
 <h3>This is in nav</h3><p>paragraph in nav,links are on hold by #  </p>
 <a href="#">page xyz<a>
@@ -327,24 +358,33 @@ I also used br tag,strong tag is like bold tag but strong tag represent aleart o
 <a href="#">page xyz<a>
 <a href="#">page xyz<a>
 </nav>
-
-<hr>
+</div>
 </div>
 <div class="div02">
 
 <main>
+	<div class="div031">
+		
 <h3>This is in main and everything following would be in main<h3>
 <p>we will see attributes,(id,class,title,style,tool tip)<br></p>
-<h4>id</h4>
-<a href="#mybaby">i have put id on image and used here so when it will refer id it will nav me to img<a>
-<h4>class</h4>
+<div style="background-color:#1E3A5F;padding:10px;"> 
+<h4 style="text-align:center;background-color: #191970;padding:2px;border-radius:3px;color:#E5E7EB;">id</h4>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width: 200px;">
+<a href="#mybaby">i have put id on image and used here so when it will refer id it will nav me to img</a>
+</div>
+	<h4  style="text-align:center;background-color: #191970;padding:2px;border-radius:3px;color:#E5E7EB;">class</h4>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width: 90%;">
 <p class="para">class is given to a group of element </p>
 <p class="para">i have used class and named it para </p>
 <p class="para">so when ever i want i can used class name and work on all paragraph</p>
 <p class="para">bassically i jsut grouped paragraphs by class,class attribute can be used on various tags i used it on paragraph tag  </p>
-<h4>title</h4>
+</div>
+<h4  style="text-align:center;background-color: #191970;padding:2px;border-radius:3px;color:#E5E7EB;">title</h4>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width: 200px;">
 <p title="you are seeing text i put in title">It is used to display a text when ever we hower over element </p>
-<h4>Form,attributes are (for,id,name)</h4>
+</div>
+<h4  style="text-align:center;background-color: #191970;padding:2px;border-radius:3px;color:#E5E7EB;">Form,attributes are (for,id,name)</h4>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width: 90%;">
 <p>I am using a <u>placeholder</u> attribute in <u>url</u> input<br>I am using a <u>required</u> attribute in <u>search</u> input<br>I am using a <u>min</u>,<u>max</u>,<u>value</u> attribute in <u>Range</u> input</p><form>
 <label for="url">URL:</label>
 <input type="url" name="url" placeholder="Put your email "><br>
@@ -394,11 +434,12 @@ I also used br tag,strong tag is like bold tag but strong tag represent aleart o
 <input type="date" name="date"><br>
 <input type="image" src="C:\Users\User\Pictures\Pictures\New folder (2)\ChatGPT Image Feb 22, 2026, 03_24_20 PM.png" width="56 "name="image"><label for="image" >CLICK ON THE IMAGE TO SUBMIT</label><br>
 
-<input type="submit" style="align:center;wigth:10pt;height:20pt">
+<input type="submit" style="text-align:center;width:40pt;height:20pt">
 
 </form>
-<h4>we will see (form fieldset and legend)</h4>
-
+</div>
+<h4  style="text-align:center;background-color: #191970;padding:2px;border-radius:3px;color:#E5E7EB;">we will see (form fieldset and legend)</h4>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width: 200px;">
 <form>
 <fieldset>
 <legend>part in a form</legend>
@@ -415,9 +456,11 @@ I also used br tag,strong tag is like bold tag but strong tag represent aleart o
 
 </fieldset>
 </form>
+</div>
 
-<h3>Now we will see Tables</h3>
-<p>caption tag,it is use to tell about the table<br>Use thead,tbody,tfoot to group elements in table</p>
+<h3  style="text-align:center;background-color: #191970;padding:2px;border-radius:3px;color:#E5E7EB;">Now we will see Tables</h3>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width:200px;">
+	<p>caption tag,it is use to tell about the table<br>Use thead,tbody,tfoot to group elements in table</p>
 <table border="1">
 <caption>Age of person</caption>
 <thead>
@@ -442,9 +485,10 @@ I also used br tag,strong tag is like bold tag but strong tag represent aleart o
 </tr>
 </tfoot>
 </table>
-
-<h3>Table merging(colspan)</h3>
-<table border="1">
+</div>
+<h3  style="text-align:center;background-color: #191970;padding:2px;border-radius:3px;color:#E5E7EB;">Table merging(colspan)</h3>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width: 200px;">
+	<table border="1">
 <caption>Age of person</caption>
 <thead>
 <tr>
@@ -468,9 +512,10 @@ I also used br tag,strong tag is like bold tag but strong tag represent aleart o
 </tr>
 </tfoot>
 </table>
-
-<h3>Table merging(rowspan)</h3>
-<table border="1">
+</div>
+<h3  style="text-align:center;background-color: #191970;padding:2px;border-radius:3px;color:#E5E7EB;">Table merging(rowspan)</h3>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width: 200px;">
+	<table border="1">
 <caption>Age of person</caption>
 <thead>
 <tr>
@@ -491,47 +536,56 @@ I also used br tag,strong tag is like bold tag but strong tag represent aleart o
 </tr>
 </tfoot>
 </table>
-
-<h3>Now we will see Media(audio,iframe,video)</h3>
-
+</div>
+<h3  style="text-align:center;background-color: #191970;padding:2px;border-radius:3px;color:#E5E7EB;">Now we will see Media(audio,iframe,video)</h3>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width: 90%;margin-bottom: 10px;">
 <p>AUDIO</p>
 <audio controls autoplay loop>
 <source src="C:\Users\User\Downloads\dragon-studio-dramatic-thud-reverb-478375.mp3" type="audio/mp3">
 your browser does not support the audio tag
 </audio>
-
-
+</div>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width:90%;margin-bottom: 10px;">
+	
 <p>VIDEO</p>
 <video controls width="310">
 <source src="C:\Users\User\Pictures\Pictures\vid\Video Project 2.mp4" type="video/mp4">
 your browser does not support the video tag
 </video>
-
+</div>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width:90%;margin-bottom: 10px;">
+	
 <P>IFRAME</P>
 <iframe  
-src="https://www.youtube.com/embed/6Q8C5tTZA0s?si=F8XwPsS_eh0KrQxZ" frameboder="0" 
+src="https://www.youtube.com/embed/TvngY4unjn4?si=uVM047nQkhlAp9Bj" frameboder="0" 
 allow="autoplay"
 allowfullscreen
 loading="lazy">
 </iframe>
-
-<p>DOWNLOAD</p>
-<a href="C:\Users\User\Desktop\cover of march\box testing.docx" download="1">download<a>
+</div>
+<div style="background-color:#F2F2F2;width:20%;padding:10px;border-radius:5px;margin:2px;width: 200px;">
+	<p>DOWNLOAD</p>
+<a href="C:\Users\User\Desktop\cover of march\box testing.docx" download="1">download</a>
+</div>
 </main>
-<hr>
 </div>
 </div>
+</div>
+
 
 <div class="div01">
 <div class="div02">
+	<div class="div031">
 <section>
 <h3>This is in section</h3><p>paragraph in section</p>
 </section>
+	</div>
 </div>
 </div>
 
 <div class="div01">
 <div class="div02">
+<div class="div031">
 <aside>
 <h3>This is in aside</h3><p>paragraph in aside</p>
 <ul>
@@ -542,21 +596,25 @@ loading="lazy">
 </aside>
 </div>
 </div>
+</div>
 
 <div class="div01">
 <div class="div02">
+<div class="div031">
 <artical>
 <h3>This is in artical</h3><p>paragraph in artical</p>
 </artical>
 </div>
 </div>
+</div>
 
 <div class="div01">
 <div class="div02">
+<div class="div031">
 <footer>
 <h3>This is in footer</h3><p>this paragraph is in footer</p></footer>
 </div>
 </div>
-
+</div>
 </body>
 </html>
